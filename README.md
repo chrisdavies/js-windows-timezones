@@ -7,7 +7,7 @@ This does something kind of dirty, which is modifies the Date object's prototype
 ## Usage
 
     var dt = new Date();
-    dt.isInDaylightSavingsTime(); // True if the date is in daylight-savings mode
+    dt.isInDaylightSavingTime(); // True if the date is in daylight-savings mode
     dt.supportsDaylightSavingTime(); // True if the current timezone supports daylight savings mode
     dt.winZone(); // Gets the Windows time-zone id (this is a best-guess, not an accurate guarantee)
     
