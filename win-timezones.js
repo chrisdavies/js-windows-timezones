@@ -142,7 +142,7 @@
         return Math.max(winter.getTimezoneOffset(), summer.getTimezoneOffset());
     }
 
-    Date.prototype.isInDaylightSavingsTime = function () {
+    Date.prototype.isInDaylightSavingTime = function () {
         return this.getTimezoneOffset() < this.stdTimezoneOffset();
     }
 
