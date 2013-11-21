@@ -2,6 +2,8 @@
 
 A set of convenience methods on JavaScript's date object to enable support for Windows time-zone strings.
 
+This does something kind of dirty, which is modifies the Date object's prototype, and also hangs an array off of the Date function itself (Date.winZones).  
+
 ## Usage
 
     var dt = new Date();
@@ -14,4 +16,11 @@ A set of convenience methods on JavaScript's date object to enable support for W
     // { offset: -420, id: "US Mountain Standard Time", supportsDaylightSavingTime: false }
     
 
-    
+## Credits
+
+The daylight computations are based on the answer here:
+
+http://stackoverflow.com/questions/11887934/check-if-daylight-saving-time-is-in-effect-and-if-it-is-for-how-many-hours
+
+## License
+MIT: http://www.tldrlegal.com/license/mit-license
